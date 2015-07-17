@@ -244,7 +244,7 @@ function SSLDecoder:_in_read()
   local chunk, err = self._ssl:read()
   if not chunk then
     if chunk == nil then err = OpenSSL_TryError("SSLDecoder:input:read error")
-    elseif err == 0 then err = OpenSSL_EOF("End of SSL input stream")
+    elseif err == 0 then self:_in_read()
     else chunk, err = nil end --! @check what can we do here?
     return chunk, err
   end
