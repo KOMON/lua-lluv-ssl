@@ -2,7 +2,7 @@ package = "lluv-ssl"
 version = "scm-0"
 
 source = {
-  url = "https://github.com/moteus/lua-lluv-ssl/archive/master.zip",
+  url = "https://github.com/KOMON/lua-lluv-ssl/archive/master.zip",
   dir = "lua-lluv-ssl-master",
 }
 
